@@ -1,0 +1,34 @@
+header {
+    background-image: url(../assets/banner-space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #bad7ff;
+}
+
+.links__idiomas_flag {
+    width: 2rem;
+    height: 2rem;    
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__list__item a {
+    font-family: 'Orbitron', sans-serif;
+    color:#ececec;
+    font-size: 0.75rem;
+    text-shadow: 0px 0px 3px black;
+    text-decoration: none;
+}
