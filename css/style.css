@@ -1,5 +1,9 @@
+/* Color palette
+https://www.color-hex.com/color-palette/1020185
+*/
+
 header {
-    background-image: url(../assets/banner-space.jpg);
+    background-image: linear-gradient( to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1));
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -25,10 +29,69 @@ header {
     justify-content: space-around;
 }
 
-.menu__list__item a {
+.menu__list__item a, .volver_arriba {
     font-family: 'Orbitron', sans-serif;
     color:#ececec;
     font-size: 0.75rem;
     text-shadow: 0px 0px 3px black;
     text-decoration: none;
+}
+
+#sobre-mi {
+    background-image: url(../assets/banner-space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 1rem;
+}
+
+#sobre-mi h2 {
+    font-family: 'Orbitron', sans-serif;
+    color:#ececec;
+    text-shadow: 0px 0px 3px black;
+    padding: 1rem;
+}
+
+.sobre_imagen_perfil {
+    max-width: 40%;
+}
+
+.sobre-mi_ficha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    color:#bad7ff;
+    text-shadow: 0px 0px 3px black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sobre-mi_ficha h2 {
+    color: #bad7ff;
+}
+
+.redes_lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.redes__icon {
+    width: 2rem;
+    height: 2rem; 
+}
+
+.sobre-mi_bio {
+    margin: 1rem;
+    color:#bad7ff;
+    text-shadow: 0px 0px 3px black;
+    font-family: 'Montserrat', sans-serif;
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 1.5rem;
+    text-justify: inter-word;
+}
+
+
+.menu__list__item:hover, .links__idiomas_flag:hover, .redes__icon:hover{
+    transform: scale(1.05);
 }
