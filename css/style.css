@@ -2,6 +2,10 @@
 https://www.color-hex.com/color-palette/1020185
 */
 
+body {
+    background-color: #37474f;
+}
+
 header {
     background-image: linear-gradient( to bottom, rgba(0,0,0,0.5), rgba(0,0,0,1));
     background-size: cover;
@@ -11,12 +15,18 @@ header {
 .titulo {
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .titulo h3 {
     font-family: 'Orbitron', sans-serif;
     color: #bad7ff;
+}
+
+.titulo_icon {
+    width: 3rem;
+    height: 3rem; 
 }
 
 .links__idiomas_flag {
@@ -44,7 +54,7 @@ header {
     padding-bottom: 1rem;
 }
 
-#sobre-mi h2 {
+h2 {
     font-family: 'Orbitron', sans-serif;
     color:#ececec;
     text-shadow: 0px 0px 3px black;
@@ -91,7 +101,55 @@ header {
     text-justify: inter-word;
 }
 
-
 .menu__list__item:hover, .links__idiomas_flag:hover, .redes__icon:hover{
     transform: scale(1.05);
+}
+
+#skills {
+    background-color: #424242;
+    /*
+    display: grid;
+    grid-template-areas:
+        "hobbies"
+        "skills"
+        "softSkills";
+    grid-template-columns:auto auto auto;
+    grid-template-rows: auto;*/
+}
+
+.skill__icon {
+    width: 4rem;
+    height: 4rem; 
+
+}
+
+#skills {
+    padding: 0 2rem;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+#skills ul {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:#bad7ff;
+    text-shadow: 0px 0px 3px black;
+    padding: 1rem 0 0 0;
+}
+
+.skills_hobbies {
+    display: grid;
+    grid-template:  8rem 8rem / auto auto auto;
+}
+
+.skills_skills {
+    display: grid;
+    grid-template:  8rem 8rem 8rem / auto auto auto;
+}
+
+.skills_softSkills {
+    display: grid;
+    grid-template:  8rem 8rem 8rem / auto auto auto;
 }
