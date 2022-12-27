@@ -37,6 +37,7 @@ header {
 .menu__list {
     display: flex;
     justify-content: space-around;
+    padding: 1rem 0.5rem;
 }
 
 .menu__list__item a, .volver_arriba {
